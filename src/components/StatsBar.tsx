@@ -1,14 +1,16 @@
 const stats = [
   { k: "2015", v: "Established" },
-  { k: "100+", v: "Acres Cultivated" },
-  { k: "Zero", v: "Debt" },
+   { k: "BSE", v: "Listed" },
+  { k: "8+", v: "Years Legacy" },
+  { k: "100%", v: "Sustainability" },
   { k: "0%", v: "Chemicals" },
+ 
 ];
 
 export function StatsBar() {
   return (
     <section className="bg-primary text-primary-foreground">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12 grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-8 grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-6">
         {stats.map((s, i) => (
           <div
             key={s.v}

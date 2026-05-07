@@ -1,4 +1,5 @@
 import hero from "@/assets/hero-field.jpg";
+import logo from "@/assets/MRC.png";
 
 export function Hero() {
   return (
@@ -14,34 +15,45 @@ export function Hero() {
       <div className="absolute inset-0 grain" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pb-20 lg:pb-28 pt-32 w-full">
-        <div className="max-w-3xl">
-          <p className="text-cream/80 text-xs tracking-[0.25em] uppercase mb-6">
-            Est. 2015 — Regenerative Agriculture, India
-          </p>
-          <h1 className="font-serif text-cream text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight">
-            Farming the Future,{" "}
-            <span className="italic text-[color:color-mix(in_oklab,var(--amber-earth)_85%,white)]">
-              Naturally.
-            </span>
-          </h1>
-          <p className="mt-6 text-cream/85 text-lg max-w-xl leading-relaxed">
-            Chemical-free, commercial-scale aromatic crop farming — built debt-free
-            across 100+ acres. An economical, sustainable model for the next
-            century of Indian agriculture.
-          </p>
-          <div className="mt-10 flex flex-wrap items-center gap-4">
-            <a
-              href="#contact"
-              className="px-7 py-3.5 rounded-full bg-accent text-accent-foreground font-medium hover:translate-y-[-1px] transition-transform"
-            >
-              Partner With Us
-            </a>
-            <a
-              href="#mission"
-              className="px-7 py-3.5 rounded-full border border-cream/30 text-cream hover:bg-cream/10 transition-colors text-sm"
-            >
-              Our Philosophy →
-            </a>
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center lg:items-end">
+          <div className="max-w-3xl flex-1">
+            <p className="text-cream/80 text-xs tracking-[0.25em] uppercase mb-6">
+              Est. 2015 — Regenerative Agriculture
+            </p>
+            <h1 className="font-serif text-cream text-6xl lg:text-8xl leading-[1.05] tracking-tight mb-8">
+              Future of <br />
+              <span className="italic text-accent">Agriculture.</span>
+            </h1>
+            <div className="space-y-6 max-w-2xl">
+              <p className="text-cream/85 text-xl leading-relaxed">
+                We produce high-quality agricultural products and natural essential oils through sustainable practices that prioritize soil conservation and biodiversity.
+              </p>
+              <p className="text-accent font-serif italic text-2xl border-l-2 border-accent pl-6 py-1">
+                "Get the best of India from the best."
+              </p>
+            </div>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <a
+                href="#contact"
+                className="px-7 py-3.5 rounded-full bg-accent text-accent-foreground font-medium hover:translate-y-[-1px] transition-transform"
+              >
+                Partner With Us
+              </a>
+              <a
+                href="#mission"
+                className="px-7 py-3.5 rounded-full border border-cream/30 text-cream hover:bg-cream/10 transition-colors text-sm"
+              >
+                Our Philosophy →
+              </a>
+            </div>
+          </div>
+          
+          <div className="flex justify-center lg:justify-start -translate-y-60 lg:-ml-80">
+            <img 
+              src={logo} 
+              alt="MRC Logo Signature" 
+              className="h-48 lg:h-72 w-auto object-contain opacity-95 hover:opacity-100 transition-opacity drop-shadow-2xl" 
+            />
           </div>
         </div>
       </div>
